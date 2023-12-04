@@ -1,7 +1,7 @@
 import Utils from '../utils'
 
 export default class Resolver {
-	_input: string[] = Utils.readFileFromLocal('./src/day01/input.txt')
+	_input: string[] = Utils.readFileFromLocal(__dirname + '/input.txt')
 	_transform: { [k: string]: string } = {
 		one: 'one1one',
 		two: 'two2two',

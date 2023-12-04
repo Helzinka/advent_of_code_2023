@@ -1,5 +1,4 @@
-import Resolver from './day01/part2'
-import Utils from './utils'
+import Resolver from './day02/part2'
 
 const res = new Resolver().response
 
