@@ -1,7 +1,7 @@
-import Utils from './utils'
+import Utils from '../utils'
 
-export class Resolver {
-	_input: string[] = Utils.readFileFromLocal('./src/input.txt')
+export default class Resolver {
+	_input: string[] = Utils.readFileFromLocal('./src/day01/input.txt')
 
 	public lineResolver(line: string): number {
 		const calibration = line.match(/\d/g)

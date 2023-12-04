@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "build/index.js",
 	"scripts": {
-		"dev": "nodemon ./src/part2.ts",
+		"dev": "nodemon ./src/main.ts",
 		"lint": "eslint . --ext .ts",
 		"test": "jest part2.spec.ts"
 	},

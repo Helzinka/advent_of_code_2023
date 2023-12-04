@@ -1,4 +1,4 @@
-import { Resolver } from './part1'
+import Resolver from './part1'
 
 describe('Day 1 - Part 1', () => {
 	test('line Resolver', () => {
