@@ -6,16 +6,11 @@ export default class Resolver {
 	public lineResolver(line: string): number {
 		const calibration = line.match(/\d/g)
 		if (calibration?.length) {
-			if (calibration.length > 1) {
-				const [first, last] = [
-					calibration[0],
-					calibration[calibration?.length - 1],
-				]
-				return Number(first + last)
-			} else {
-				const first = calibration[0]
-				return Number(first + first)
-			}
+			const [first, last] = [
+				calibration[0],
+				calibration[calibration?.length - 1],
+			]
+			return Number(first + last)
 		}
 		return 0
 	}
@@ -32,6 +27,3 @@ export default class Resolver {
 		return this.calibrationResolver(this._input)
 	}
 }
-
-let data = new Resolver().response
-console.log(data)
