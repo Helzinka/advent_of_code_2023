@@ -1,4 +1,4 @@
-import Resolver from './day02/part2'
+import Resolver from './day03/part1'
 
 const res = new Resolver().response
 
